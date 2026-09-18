@@ -1,0 +1,404 @@
+Timestamp,Username,Event,Details
+2026-08-12 19:07:57,Gia,Tab Switched,Browser Activity
+2026-08-12 19:08:35,Gia,Tab Switched,Browser Activity
+2026-08-12 19:24:44,Gia,Tab Switched,Browser Activity
+2026-08-12 19:25:48,Gia,Tab Switched,Browser Activity
+2026-08-12 19:26:03,Gia,Face Absent,No face detected
+2026-08-12 19:26:04,Gia,Face Present,Student returned after 3.4 seconds
+2026-08-12 19:26:13,Gia,Face Absent,No face detected
+2026-08-12 19:26:15,Gia,Face Present,Student returned after 3.4 seconds
+2026-08-12 19:26:17,Gia,Tab Switched,Browser Activity
+2026-08-12 19:26:19,Gia,Tab Switched,Browser Activity
+2026-08-12 19:26:26,Gia,Face Absent,No face detected
+2026-08-12 19:26:26,Gia,Face Present,Student returned after 2.4 seconds
+2026-08-12 20:10:58,Gia,Returned to Exam,Browser Activity
+2026-08-12 20:11:01,Gia,Tab Switched,Browser Activity
+2026-08-12 20:17:13,Riya,Tab Switched,Browser Activity
+2026-08-12 20:17:27,Riya,Tab Switched,Browser Activity
+2026-08-12 20:17:31,Riya,Returned to Exam,Browser Activity
+2026-08-12 20:19:52,Priya,Tab Switched,Browser Activity
+2026-08-12 20:20:19,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:20:20,Priya,Tab Switched,Browser Activity
+2026-08-12 20:20:36,Priya,Tab Switched,Browser Activity
+2026-08-12 20:20:37,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:20:45,Priya,Tab Switched,Browser Activity
+2026-08-12 20:20:45,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:20:46,Priya,Tab Switched,Browser Activity
+2026-08-12 20:21:10,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:21:12,Priya,Tab Switched,Browser Activity
+2026-08-12 20:21:18,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:21:19,Priya,Tab Switched,Browser Activity
+2026-08-12 20:21:23,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:21:25,Priya,Tab Switched,Browser Activity
+2026-08-12 20:21:29,Priya,Tab Switched,Browser Activity
+2026-08-12 20:21:34,Priya,Returned to Exam,Browser Activity
+2026-08-12 20:21:56,Tina,Tab Switched,Browser Activity
+2026-08-12 20:22:12,Tina,Tab Switched,Browser Activity
+2026-08-12 20:22:20,Tina,Returned to Exam,Browser Activity
+2026-08-12 20:22:35,Gina,Tab Switched,Browser Activity
+2026-08-12 20:22:49,Gina,Tab Switched,Browser Activity
+2026-08-12 20:22:51,Gina,Returned to Exam,Browser Activity
+2026-08-12 20:23:52,Gina,Multiple Faces,More than one face detected
+2026-08-12 20:24:03,Gina,Tab Switched,Browser Activity
+2026-08-12 20:24:04,Gina,Returned to Exam,Browser Activity
+2026-08-12 20:24:36,Hira,Tab Switched,Browser Activity
+2026-08-12 20:24:38,Hira,Tab Switched,Browser Activity
+2026-08-12 20:24:39,Hira,Returned to Exam,Browser Activity
+2026-08-12 20:24:40,Hira,Tab Switched,Browser Activity
+2026-08-12 20:24:41,Hira,Returned to Exam,Browser Activity
+2026-08-12 20:24:57,Hira,Multiple Faces,More than one face detected
+2026-08-12 20:25:02,Hira,Tab Switched,Browser Activity
+2026-08-12 20:25:04,Hira,Returned to Exam,Browser Activity
+2026-08-18 18:58:19,Gia,Tab Switched,Browser Activity
+2026-08-18 18:58:56,Gia,Tab Switched,Browser Activity
+2026-08-18 18:58:58,Gia,Returned to Exam,Browser Activity
+2026-08-18 18:59:03,Gia,Tab Switched,Browser Activity
+2026-08-18 18:59:03,Gia,Returned to Exam,Browser Activity
+2026-08-18 18:59:09,Gia,Tab Switched,Browser Activity
+2026-08-18 18:59:16,Gia,Tab Switched,Browser Activity
+2026-08-18 18:59:19,Gia,Returned to Exam,Browser Activity
+2026-08-18 18:59:21,Gia,Tab Switched,Browser Activity
+2026-08-18 18:59:57,Gia,Returned to Exam,Browser Activity
+2026-08-18 19:00:02,Gia,Tab Switched,Browser Activity
+2026-08-18 19:01:15,Gia,Returned to Exam,Browser Activity
+2026-08-18 19:01:18,Gia,Tab Switched,Browser Activity
+2026-08-18 19:04:18,Gia,Returned to Exam,Browser Activity
+2026-08-18 19:04:19,Gia,Tab Switched,Browser Activity
+2026-08-18 19:21:43,Gia,Returned to Exam,Browser Activity
+2026-08-18 20:41:11,Gia,Tab Switched,Browser Activity
+2026-08-18 20:41:51,Gia,Returned to Exam,Browser Activity
+2026-08-18 20:41:58,Gia,Tab Switched,Browser Activity
+2026-08-18 22:07:10,Gia,Tab Switched,Browser Activity
+2026-08-18 22:07:16,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:07:18,Gia,Tab Switched,Browser Activity
+2026-08-18 22:07:36,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:07:38,Gia,Tab Switched,Browser Activity
+2026-08-18 22:07:44,Gia,Tab Switched,Browser Activity
+2026-08-18 22:07:59,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:08:00,Gia,Tab Switched,Browser Activity
+2026-08-18 22:08:01,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:08:59,Gia,Tab Switched,Browser Activity
+2026-08-18 22:09:04,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:09:12,Gia,Tab Switched,Browser Activity
+2026-08-18 22:09:52,Gia,Tab Switched,Browser Activity
+2026-08-18 22:09:55,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:09:58,Gia,Tab Switched,Browser Activity
+2026-08-18 22:30:39,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:30:40,Gia,Tab Switched,Browser Activity
+2026-08-18 22:33:15,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:33:17,Gia,Tab Switched,Browser Activity
+2026-08-18 22:33:18,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:33:19,Gia,Tab Switched,Browser Activity
+2026-08-18 22:33:34,Gia,Returned to Exam,Browser Activity
+2026-08-18 22:33:35,Gia,Tab Switched,Browser Activity
+2026-08-19 18:34:02,Kishan,Tab Switched,Browser Activity
+2026-08-19 18:35:34,Raju,Face Absent,No face detected
+2026-08-19 18:35:35,Raju,Face Present,Student returned after 2.7 seconds
+2026-08-19 18:35:39,Raju,Tab Switched,Browser Activity
+2026-08-19 18:35:45,Raju,Returned to Exam,Browser Activity
+2026-08-19 18:37:06,Raju,Tab Switched,Browser Activity
+2026-08-19 18:45:50,Raju,Tab Switched,Browser Activity
+2026-08-19 18:46:19,Raju,Tab Switched,Browser Activity
+2026-08-19 18:46:40,Raju,Tab Switched,Browser Activity
+2026-08-19 18:46:41,Raju,Returned to Exam,Browser Activity
+2026-08-19 18:46:46,Raju,Tab Switched,Browser Activity
+2026-08-19 18:46:56,Raju,Returned to Exam,Browser Activity
+2026-08-19 18:47:17,Raju,Tab Switched,Browser Activity
+2026-08-19 18:47:38,Raju,Returned to Exam,Browser Activity
+2026-08-19 18:47:58,Raju,Tab Switched,Browser Activity
+2026-08-19 18:48:14,Gia,Tab Switched,Browser Activity
+2026-08-19 18:51:59,Gia,Returned to Exam,Browser Activity
+2026-08-19 18:51:59,Gia,Tab Switched,Browser Activity
+2026-08-19 19:09:30,Gia,Returned to Exam,Browser Activity
+2026-08-19 19:10:53,Raju,Tab Switched,Browser Activity
+2026-08-19 19:11:23,Raju,Face Absent,No face detected
+2026-08-19 19:11:23,Raju,Face Present,Student returned after 2.1 seconds
+2026-08-19 19:11:32,Raju,Tab Switched,Browser Activity
+2026-08-19 19:11:36,Raju,Returned to Exam,Browser Activity
+2026-08-19 19:11:39,Raju,Tab Switched,Browser Activity
+2026-08-19 19:11:49,Raju,Tab Switched,Browser Activity
+2026-08-19 19:20:01,Raju,Face Absent,No face detected
+2026-08-19 19:20:01,Raju,Face Present,Student returned after 2.1 seconds
+2026-08-19 19:23:43,Raju,Tab Switched,Browser Activity
+2026-08-20 18:19:24,Raju,Tab Switched,Browser Activity
+2026-08-20 18:19:41,Raju,Returned to Exam,Browser Activity
+2026-08-20 18:19:45,Raju,Tab Switched,Browser Activity
+2026-08-20 18:20:09,Raju,Face Absent,No face detected
+2026-08-20 18:20:14,Raju,Tab Switched,Browser Activity
+2026-08-20 18:20:19,Raju,Returned to Exam,Browser Activity
+2026-08-20 18:20:24,Raju,Tab Switched,Browser Activity
+2026-08-20 18:20:58,Raju,Returned to Exam,Browser Activity
+2026-08-20 18:21:08,Raju,Tab Switched,Browser Activity
+2026-08-20 18:21:25,Raju,Returned to Exam,Browser Activity
+2026-08-20 18:21:27,Raju,Tab Switched,Browser Activity
+2026-08-20 18:21:51,Raju,Returned to Exam,Browser Activity
+2026-08-20 18:21:52,Raju,Tab Switched,Browser Activity
+2026-08-20 18:21:54,Raju,Returned to Exam,Browser Activity
+2026-08-20 18:22:00,Raju,Tab Switched,Browser Activity
+2026-08-20 19:16:39,Priya,Tab Switched,Browser Activity
+2026-08-20 19:17:01,Priya,Tab Switched,Browser Activity
+2026-08-20 19:17:02,Priya,Returned to Exam,Browser Activity
+2026-08-20 19:17:11,Priya,Tab Switched,Browser Activity
+2026-08-20 19:17:33,Priya,Returned to Exam,Browser Activity
+2026-08-20 19:17:39,Priya,Tab Switched,Browser Activity
+2026-08-20 19:17:40,Priya,Returned to Exam,Browser Activity
+2026-08-20 19:17:42,Priya,Tab Switched,Browser Activity
+2026-08-20 19:33:49,Kishan,Tab Switched,Browser Activity
+2026-08-20 19:34:00,Kishan,Face Absent,No face detected
+2026-08-20 19:34:00,Kishan,Face Present,Student returned after 2.5 seconds
+2026-08-20 19:34:07,Kishan,Face Absent,No face detected
+2026-08-20 19:34:08,Kishan,Face Present,Student returned after 3.6 seconds
+2026-08-20 19:34:12,Kishan,Tab Switched,Browser Activity
+2026-08-20 19:34:17,Kishan,Returned to Exam,Browser Activity
+2026-08-20 19:34:25,Kishan,Tab Switched,Browser Activity
+2026-08-24 13:37:39,Gia,Tab Switched,Browser Activity
+2026-08-24 13:37:40,Gia,Returned to Exam,Browser Activity
+2026-08-24 13:37:41,Gia,Tab Switched,Browser Activity
+2026-08-24 14:02:51,Tina,Tab Switched,Browser Activity
+2026-08-24 15:14:59,Tina,Tab Switched,Browser Activity
+2026-08-24 15:35:16,Tina,Tab Switched,Browser Activity
+2026-08-24 22:52:28,Tina,Tab Switched,Browser Activity
+2026-08-24 23:07:45,Tina,Tab Switched,Browser Activity
+2026-08-24 23:27:10,Tina,Tab Switched,Browser Activity
+2026-08-25 13:39:44,Tina,Tab Switched,Browser Activity
+2026-08-25 13:43:18,Tina,Returned to Exam,Browser Activity
+2026-08-25 14:04:28,Tina,Tab Switched,Browser Activity
+2026-08-25 14:04:48,Tina,Face Absent,No face detected
+2026-08-25 14:04:55,Tina,Face Present,Student returned after 9.3 seconds
+2026-08-25 14:05:03,Tina,Face Absent,No face detected
+2026-08-25 14:05:27,Tina,Face Present,Student returned after 0.2 seconds
+2026-08-25 14:05:39,Tina,Face Absent,No face detected
+2026-08-25 14:05:42,Tina,Face Present,Student returned after 5.7 seconds
+2026-08-25 14:05:49,Tina,Face Absent,No face detected
+2026-08-25 14:05:58,Tina,Face Present,Student returned after 10.9 seconds
+2026-08-25 14:06:00,Tina,Face Absent,No face detected
+2026-08-25 14:06:06,Tina,Face Present,Student returned after 8.4 seconds
+2026-08-25 14:06:11,Tina,Face Absent,No face detected
+2026-08-25 14:06:19,Tina,Face Present,Student returned after 1.2 seconds
+2026-08-25 14:06:21,Tina,Face Absent,No face detected
+2026-08-25 14:08:57,Tina,Face Present,Student returned after 158.1 seconds
+2026-08-25 14:09:03,Tina,Face Absent,No face detected
+2026-08-25 14:09:07,Tina,Face Present,Student returned after 0.1 seconds
+2026-08-25 14:09:10,Tina,Face Absent,No face detected
+2026-08-25 14:09:25,Tina,Face Present,Student returned after 17.6 seconds
+2026-08-25 14:09:28,Tina,Face Absent,No face detected
+2026-08-25 14:09:34,Tina,Face Present,Student returned after 8.3 seconds
+2026-08-25 14:09:39,Tina,Face Absent,No face detected
+2026-08-25 14:09:42,Tina,Face Present,Student returned after 4.9 seconds
+2026-08-25 14:09:45,Tina,Face Absent,No face detected
+2026-08-25 14:09:55,Tina,Face Present,Student returned after 0.1 seconds
+2026-08-25 14:09:58,Tina,Face Absent,No face detected
+2026-08-25 14:16:08,Tina,Tab Switched,Browser Activity
+2026-08-25 14:16:19,Tina,Face Absent,No face detected
+2026-08-25 14:16:20,Tina,Face Present,Student returned after 3.0 seconds
+2026-08-25 14:16:23,Tina,Face Absent,No face detected
+2026-08-25 14:16:27,Tina,Face Present,Student returned after 6.2 seconds
+2026-08-25 14:16:35,Tina,Face Absent,No face detected
+2026-08-25 14:16:55,Tina,Face Present,Student returned after 21.9 seconds
+2026-08-25 14:16:59,Tina,Face Absent,No face detected
+2026-08-25 14:17:00,Tina,Face Present,Student returned after 2.8 seconds
+2026-08-25 14:17:06,Tina,Face Absent,No face detected
+2026-08-25 14:17:06,Tina,Face Present,Student returned after 0.2 seconds
+2026-08-25 14:17:13,Tina,Face Absent,No face detected
+2026-08-25 14:17:13,Tina,Face Present,Student returned after 2.2 seconds
+2026-08-25 14:17:25,Tina,Face Absent,No face detected
+2026-08-25 14:17:28,Tina,Face Present,Student returned after 0.3 seconds
+2026-08-25 14:18:00,Tina,Face Absent,No face detected
+2026-08-25 14:18:07,Tina,Face Present,Student returned after 7.0 seconds
+2026-08-25 14:18:10,Tina,Face Absent,No face detected
+2026-08-25 14:18:12,Tina,Face Present,Student returned after 4.4 seconds
+2026-08-25 14:18:15,Tina,Face Absent,No face detected
+2026-08-25 14:18:17,Tina,Face Present,Student returned after 4.0 seconds
+2026-08-25 14:18:20,Tina,Face Absent,No face detected
+2026-08-25 14:18:22,Tina,Face Present,Student returned after 4.0 seconds
+2026-08-25 14:19:16,Tina,Face Absent,No face detected
+2026-08-25 14:19:19,Tina,Face Present,Student returned after 0.2 seconds
+2026-08-25 14:19:34,Tina,Face Absent,No face detected
+2026-08-25 14:19:36,Tina,Face Present,Student returned after 3.2 seconds
+2026-08-25 14:19:38,Tina,Face Absent,No face detected
+2026-08-25 14:19:52,Tina,Face Present,Student returned after 8.3 seconds
+2026-08-25 14:19:56,Tina,Face Absent,No face detected
+2026-08-25 14:20:07,Tina,Face Present,Student returned after 0.7 seconds
+2026-08-25 14:20:10,Tina,Face Absent,No face detected
+2026-08-25 14:20:22,Tina,Face Present,Student returned after 5.3 seconds
+2026-08-25 14:20:31,Tina,Face Absent,No face detected
+2026-08-25 14:20:41,Tina,Face Present,Student returned after 9.1 seconds
+2026-08-25 14:20:46,Tina,Face Absent,No face detected
+2026-08-25 14:20:54,Tina,Face Present,Student returned after 10.4 seconds
+2026-08-25 14:21:04,Tina,Face Absent,No face detected
+2026-08-25 14:21:11,Tina,Face Present,Student returned after 8.5 seconds
+2026-08-25 14:22:09,Tina,Face Absent,No face detected
+2026-08-25 14:22:11,Tina,Face Present,Student returned after 3.8 seconds
+2026-08-25 14:22:44,Tina,Multiple Faces,More than one face detected
+2026-08-25 14:22:50,Tina,Multiple Faces,More than one face detected
+2026-08-25 14:23:04,Tina,Face Absent,No face detected
+2026-08-25 14:30:49,Tina,Tab Switched,Browser Activity
+2026-08-25 14:31:06,Tina,Face Absent,No face detected
+2026-08-26 09:02:31,Tina,Tab Switched,Browser Activity
+2026-08-26 09:03:57,Tina,Tab Switched,Browser Activity
+2026-08-26 09:04:12,Tina,Tab Switched,Browser Activity
+2026-08-26 09:04:55,Tina,Tab Switched,Browser Activity
+2026-08-26 09:06:04,Tina,Returned to Exam,Browser Activity
+2026-08-26 09:06:06,Tina,Tab Switched,Browser Activity
+2026-08-26 09:53:25,Gia,Tab Switched,Browser Activity
+2026-08-26 09:54:17,Gia,Tab Switched,Browser Activity
+2026-08-26 19:04:53,Gia,Tab Switched,Browser Activity
+2026-08-26 19:05:55,Gia,Tab Switched,Browser Activity
+2026-08-26 19:06:06,Gia,Returned to Exam,Browser Activity
+2026-08-26 19:06:08,Gia,Tab Switched,Browser Activity
+2026-08-26 19:06:10,Gia,Returned to Exam,Browser Activity
+2026-08-26 19:06:43,Gia,Tab Switched,Browser Activity
+2026-08-26 19:58:45,Gia,Tab Switched,Browser Activity
+2026-08-26 19:59:09,Gia,Tab Switched,Browser Activity
+2026-08-26 19:59:11,Gia,Returned to Exam,Browser Activity
+2026-08-26 19:59:12,Gia,Tab Switched,Browser Activity
+2026-08-26 19:59:29,Gia,Returned to Exam,Browser Activity
+2026-08-26 19:59:31,Gia,Tab Switched,Browser Activity
+2026-08-26 23:06:42,Gia,Tab Switched,Browser Activity
+2026-08-26 23:06:58,Gia,Face Absent,No face detected
+2026-08-26 23:07:41,Gia,Tab Switched,Browser Activity
+2026-08-26 23:09:09,Gia,Tab Switched,Browser Activity
+2026-08-26 23:09:28,Gia,Returned to Exam,Browser Activity
+2026-08-26 23:09:40,Tina,Tab Switched,Browser Activity
+2026-08-26 23:09:57,Tina,Returned to Exam,Browser Activity
+2026-08-26 23:10:00,Tina,Tab Switched,Browser Activity
+2026-08-26 23:10:58,Hira,Tab Switched,Browser Activity
+2026-08-26 23:11:54,Gina,Tab Switched,Browser Activity
+2026-08-26 23:12:48,Gina,Tab Switched,Browser Activity
+2026-08-26 23:12:55,Gina,Returned to Exam,Browser Activity
+2026-08-26 23:12:56,Gina,Tab Switched,Browser Activity
+2026-08-26 23:53:25,Gia,Tab Switched,Browser Activity
+2026-08-26 23:53:53,Gia,Tab Switched,Browser Activity
+2026-08-26 23:55:03,Riya,Tab Switched,Browser Activity
+2026-08-26 23:58:57,Kishan,Tab Switched,Browser Activity
+2026-08-26 23:59:41,Kishan,Tab Switched,Browser Activity
+2026-08-26 23:59:46,Kishan,Returned to Exam,Browser Activity
+2026-08-27 00:00:39,Ram,Tab Switched,Browser Activity
+2026-08-27 00:04:21,Tina,Tab Switched,Browser Activity
+2026-08-27 00:08:23,Tina,Tab Switched,Browser Activity
+2026-08-27 08:36:24,Tina,Tab Switched,Browser Activity
+2026-08-27 08:37:12,Tina,Tab Switched,Browser Activity
+2026-08-27 09:59:08,Tina,Tab Switched,Browser Activity
+2026-08-27 09:59:23,Tina,Face Absent,No face detected
+2026-08-27 09:59:23,Tina,Face Present,Student returned after 2.6 seconds
+2026-08-27 09:59:26,Tina,Face Absent,No face detected
+2026-08-27 09:59:27,Tina,Face Present,Student returned after 2.9 seconds
+2026-08-27 09:59:29,Tina,Face Absent,No face detected
+2026-08-27 09:59:31,Tina,Face Present,Student returned after 4.3 seconds
+2026-08-27 10:00:00,Tina,Multiple Faces,More than one face detected
+2026-08-27 10:00:13,Tina,Face Absent,No face detected
+2026-08-27 10:00:14,Tina,Face Present,Student returned after 2.5 seconds
+2026-08-27 10:00:16,Tina,Face Absent,No face detected
+2026-08-27 10:00:19,Tina,Face Present,Student returned after 4.2 seconds
+2026-08-27 10:00:40,Tina,Multiple Faces,More than one face detected
+2026-08-27 10:01:15,Tina,Tab Switched,Browser Activity
+2026-08-27 10:10:25,Hira,Tab Switched,Browser Activity
+2026-08-27 10:10:43,Hira,Tab Switched,Browser Activity
+2026-08-27 10:12:32,Hira,Tab Switched,Browser Activity
+2026-08-27 10:12:57,Hira,Tab Switched,Browser Activity
+2026-08-27 10:17:48,Hira,Tab Switched,Browser Activity
+2026-08-27 10:18:09,Hira,Tab Switched,Browser Activity
+2026-08-27 18:00:40,Hira,Tab Switched,Browser Activity
+2026-08-27 18:01:01,Hira,Tab Switched,Browser Activity
+2026-08-27 18:55:20,Kishan,Face Absent,No face detected
+2026-08-27 18:55:23,Kishan,Face Present,Student returned after 1.1 seconds
+2026-08-27 19:06:26,Kishan,Tab Switched,Browser Activity
+2026-08-27 19:06:38,Kishan,Tab Switched,Browser Activity
+2026-08-27 19:06:45,Kishan,Tab Switched,Browser Activity
+2026-08-27 19:19:05,Hira,Tab Switched,Browser Activity
+2026-08-27 19:19:10,Hira,Tab Switched,Browser Activity
+2026-08-30 11:46:35,Hira,Tab Switched,Browser Activity
+2026-08-30 11:46:45,Hira,Face Absent,No face detected
+2026-08-30 11:46:46,Hira,Face Present,Student returned after 2.9 seconds
+2026-08-30 11:46:49,Hira,Tab Switched,Browser Activity
+2026-08-31 14:17:06,Hira,Multiple Faces,More than one face detected
+2026-08-31 14:17:11,Hira,Face Absent,No face detected
+2026-08-31 14:17:11,Hira,Tab Switched,Browser Activity
+2026-08-31 14:17:13,Hira,Face Present,Student returned after 4.4 seconds
+2026-08-31 14:17:16,Hira,Multiple Faces,More than one face detected
+2026-08-31 14:17:21,Hira,Tab Switched,Browser Activity
+2026-08-31 14:54:00,Hira,Face Absent,No face detected
+2026-08-31 14:54:00,Hira,Face Present,Student returned after 0.2 seconds
+2026-08-31 14:54:06,Hira,Tab Switched,Browser Activity
+2026-08-31 15:04:51,Hira,Face Absent,No face detected
+2026-08-31 15:04:53,Hira,Face Present,Student returned after 4.2 seconds
+2026-08-31 15:05:00,Hira,Tab Switched,Browser Activity
+2026-08-31 19:14:37,Priya,Tab Switched,Browser Activity
+2026-08-31 19:14:44,Priya,Tab Switched,Browser Activity
+2026-09-02 15:47:39,Riya,Face Absent,No face detected
+2026-09-02 15:47:41,Riya,Face Present,Student returned after 3.2 seconds
+2026-09-02 15:47:48,Riya,Tab Switched,Browser Activity
+2026-09-02 15:47:52,Riya,Tab Switched,Browser Activity
+2026-09-02 16:10:07,Priya,Tab Switched,Browser Activity
+2026-09-06 20:51:12,Priya,Tab Switched,Browser Activity
+2026-09-06 22:14:44,Tina,Face Absent,No face detected
+2026-09-06 22:14:46,Tina,Face Present,Student returned after 3.9 seconds
+2026-09-06 22:27:41,Priya,Tab Switched,Browser Activity
+2026-09-06 22:27:43,Priya,Tab Switched,Browser Activity
+2026-09-06 22:27:51,Priya,Tab Switched,Browser Activity
+2026-09-06 23:03:29,Priya,Tab Switched,Browser Activity
+2026-09-06 23:03:39,Priya,Tab Switched,Browser Activity
+2026-09-06 23:10:22,Riya,Tab Switched,Browser Activity
+2026-09-06 23:10:29,Riya,Tab Switched,Browser Activity
+2026-09-06 23:10:37,Riya,Tab Switched,Browser Activity
+2026-09-06 23:27:20,Riya,Tab Switched,Browser Activity
+2026-09-06 23:30:40,Riya,Face Absent,No face detected
+2026-09-06 23:30:40,Riya,Face Absent,No face detected
+2026-09-06 23:31:18,Riya,Face Absent,No face detected
+2026-09-06 23:31:20,Riya,Face Absent,No face detected
+2026-09-06 23:31:22,Riya,Face Absent,No face detected
+2026-09-06 23:31:23,Riya,Face Absent,No face detected
+2026-09-06 23:31:26,Riya,Face Absent,No face detected
+2026-09-06 23:31:54,Riya,Face Absent,No face detected
+2026-09-06 23:32:14,Riya,Face Absent,No face detected
+2026-09-06 23:32:14,Riya,Face Absent,No face detected
+2026-09-06 23:32:15,Riya,Face Absent,No face detected
+2026-09-06 23:32:24,Riya,Face Absent,No face detected
+2026-09-06 23:32:25,Riya,Face Absent,No face detected
+2026-09-06 23:32:52,Riya,Face Absent,No face detected
+2026-09-06 23:33:03,Riya,Face Absent,No face detected
+2026-09-06 23:33:09,Riya,Face Absent,No face detected
+2026-09-06 23:33:16,Riya,Face Absent,No face detected
+2026-09-06 23:37:53,Riya,Tab Switched,Browser Activity
+2026-09-06 23:38:40,Riya,Tab Switched,Browser Activity
+2026-09-06 23:38:40,Riya,Tab Switched,Browser Activity
+2026-09-06 23:38:40,Riya,Tab Switched,Browser Activity
+2026-09-06 23:39:37,Riya,Tab Switched,Browser Activity
+2026-09-06 23:39:47,Riya,Tab Switched,Browser Activity
+2026-09-06 23:40:06,Riya,Tab Switched,Browser Activity
+2026-09-06 23:40:12,Riya,Tab Switched,Browser Activity
+2026-09-06 23:40:12,Riya,Tab Switched,Browser Activity
+2026-09-06 23:44:15,Riya,Tab Switched,Browser Activity
+2026-09-06 23:44:17,Riya,Tab Switched,Browser Activity
+2026-09-06 23:47:22,Riya,Tab Switched,Browser Activity
+2026-09-06 23:47:26,Riya,Tab Switched,Browser Activity
+2026-09-08 15:35:15,Kishan,Tab Switched,Browser Activity
+2026-09-08 15:35:15,Kishan,Tab Switched,Browser Activity
+2026-09-08 15:37:04,Kishan,Tab Switched,Browser Activity
+2026-09-08 15:38:36,Gina,Tab Switched,Browser Activity
+2026-09-08 15:38:44,Gina,Tab Switched,Browser Activity
+2026-09-08 15:38:46,Gina,Tab Switched,Browser Activity
+2026-09-08 16:14:05,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:12,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:17,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:20,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:28,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:43,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:50,Raju,Tab Switched,Browser Activity
+2026-09-08 16:14:56,Raju,Tab Switched,Browser Activity
+2026-09-08 16:15:13,Raju,Tab Switched,Browser Activity
+2026-09-08 16:22:16,Raju,Tab Switched,Browser Activity
+2026-09-08 16:34:18,Hira,Face Absent,No face detected
+2026-09-08 16:34:55,Hira,Tab Switched,Browser Activity
+2026-09-08 16:52:29,Hira,Tab Switched,Browser Activity
+2026-09-08 17:01:05,Tina,Tab Switched,Browser Activity
+2026-09-08 17:01:15,Tina,Tab Switched,Browser Activity
+2026-09-08 17:37:22,Gia,Tab Switched,Browser Activity
+2026-09-08 17:37:35,Gia,Tab Switched,Browser Activity
+2026-09-09 18:07:47,Nita,Tab Switched,Browser Activity
+2026-09-09 18:07:50,Nita,Tab Switched,Browser Activity
+2026-09-09 18:16:31,Nita,Face Absent,No face detected
+2026-09-09 18:16:40,Nita,Tab Switched,Browser Activity
+2026-09-09 18:16:42,Nita,Face Present,Student returned after 12.7 seconds
+2026-09-09 18:27:29,Priyanka,Tab Switched,Browser Activity
+2026-09-09 18:27:31,Priyanka,Tab Switched,Browser Activity
