@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ExamGuard Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <h1>🛡️ ExamGuard Dashboard</h1>
+
+    <h2>Welcome, {{ username }}</h2>
+
+    <div class="cards">
+
+    <div class="card">
+        <h3>Integrity Score</h3>
+        <p>🟢 Active</p> 
+
+    </div>
+
+    <div class="card">
+        <h3>Camera Status</h3>
+        <p>🟢 Active</p>
+    </div>
+
+    </div>
+
+
+    <div class="card">
+
+    <h3>Monitoring Status</h3>
+
+    <p id="monitor-status">
+        ⏳ Waiting to Start Monitoring
+    </p>
+
+    </div>
+
+
+
+    <!--<a href="/camera"> 
+    <button>Start Monitoring</button>
+    </a>  !-->
+
+    <a href="/exam">
+    <button>Start Exam</button>
+    </a>
+
+
+    <br><br>
+
+
+
+    <a href="{{ url_for('invigilator') }}">
+        <button>View Invigilator Analytics</button>
+    </a>
+
+    <br><br>
+
+    <a href="/logout">
+        <button>Logout</button>
+    </a>
+
+</div>
+
+
+
+
+
+<script>
+
+/* document.addEventListener("visibilitychange", function() {
+
+    let eventName;
+
+    if (document.hidden) {
+        eventName = "Tab Switched";
+    } else {
+        eventName = "Returned to Exam";
+    }
+
+    fetch("/log_browser_event", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "event=" + encodeURIComponent(eventName)
+    });
+
+}); */
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

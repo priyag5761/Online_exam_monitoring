@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <title>ExamGuard - Online Exam</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef5fb;
+        }
+
+        .header {
+            background: #087dcc;
+            color: white;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .exam-container {
+            display: flex;
+            gap: 25px;
+            padding: 25px;
+        }
+
+        /* LEFT SIDE */
+
+        .questions {
+            flex: 2;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            display: block;
+            padding: 10px;
+            margin: 7px 0;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background: #eef5fb;
+        }
+
+        /* RIGHT SIDE */
+
+        .monitoring {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            height: fit-content;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+            position: sticky;
+            top: 20px;
+        }
+
+        .monitoring h2 {
+            color: #087dcc;
+            text-align: center;
+        }
+
+
+        .camera-box {
+            width: 100%;
+            height: 250px;
+            background: #222;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #camera-feed {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scaleX(-1);
+        }
+
+        .status {
+            margin-top: 15px;
+            padding: 12px;
+            background: #eef5fb;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+
+            border: none;
+            border-radius: 7px;
+
+            background: #087dcc;
+            color: white;
+
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #066bab;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>🛡 ExamGuard</h1>
+
+        <div>
+            Time Remaining:
+            <strong id="timer">30:00</strong>
+        </div>
+
+    </div>
+
+
+    <!-- EXAM CONTENT -->
+
+    <div class="exam-container">
+
+
+        <!-- QUESTIONS -->
+
+        <div class="questions">
+
+            <h2>Online Examination</h2>
+
+            <!--<form> -->
+            <form id="exam-form">
+
+
+                <!-- QUESTION 1 -->
+
+                <div class="question">
+
+                    <h3>
+                        1. Which of the following is a connection-oriented protocol?
+                    </h3>
+
+                    <label class="option">
+                        <input type="radio" name="q1" value="HTTP">
+                        HTTP
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q1" value="TCP">
+                        TCP
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q1" value="UDP">
+                        UDP
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q1" value="IP">
+                        IP
+                    </label>
+
+                </div>
+
+
+                <!-- QUESTION 2 -->
+
+                <div class="question">
+
+                    <h3>
+                        2. Which OOP concept allows one class to acquire properties of another class?
+                    </h3>
+
+                    <label class="option">
+                        <input type="radio" name="q2" value="Encapsulation">
+                        Encapsulation
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q2" value="Inheritance">
+                        Inheritance
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q2" value="Polymorphism">
+                        Polymorphism
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q2" value="Abstraction">
+                        Abstraction
+                    </label>
+
+                </div>
+
+
+                <!-- QUESTION 3 -->
+
+                <div class="question">
+
+                    <h3>
+                        3. Which data structure follows the LIFO principle?
+                    </h3>
+
+                    <label class="option">
+                        <input type="radio" name="q3" value="Queue">
+                        Queue
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q3" value="Stack">
+                        Stack
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q3" value="Array">
+                        Array
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q3" value="LinkedList">
+                        Linked List
+                    </label>
+
+                </div>
+
+
+                <!-- QUESTION 4 -->
+
+                <div class="question">
+
+                    <h3>
+                        4. Which SQL command is used to retrieve data from a database?
+                    </h3>
+
+                    <label class="option">
+                        <input type="radio" name="q4" value="INSERT">
+                        INSERT
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q4" value="UPDATE">
+                        UPDATE
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q4" value="SELECT">
+                        SELECT
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="q4" value="DELETE">
+                        DELETE
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="submit-button"
+                    onclick="submitExam()">
+
+                    Submit Exam
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- MONITORING -->
+
+        <div class="monitoring">
+
+            <h2>Exam Monitoring</h2>
+
+            <!--<div class="camera-box">
+
+                📷 Camera
+                <br>
+
+                Camera will appear here
+
+            </div> !-->
+
+            <!--<div class="camera-box">
+
+            <img
+                src="{{ url_for('video_feed') }}"
+                width="100%"
+                height="100%"
+                style="object-fit: cover; border-radius: 10px;"
+            >
+
+            </div> !-->
+
+
+            <!-- <div class="camera-box">
+                <video id="camera-feed" autoplay playsinline></video>
+            </div> !-->
+
+
+            <div class="camera-box">
+                <img
+                    src="{{ url_for('video_feed') }}"
+                    id="camera-feed"
+                    alt="Exam Camera"
+                >
+            </div>
+
+
+            <div class="status" id="monitoring-status">
+                🟢 Starting Monitoring
+            </div>
+
+            <div class="status">
+                Integrity Score:
+                <strong id="integrity-score">100%</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // 30 minute timer
+
+        let time = 30 * 60;
+
+        const timer = document.getElementById("timer");
+
+
+        const countdown = setInterval(function () {
+
+            let minutes = Math.floor(time / 60);
+
+            let seconds = time % 60;
+
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            timer.innerHTML = minutes + ":" + seconds;
+
+            time--;
+
+            if (time < 0) {
+
+                clearInterval(countdown);
+
+                alert("Time is over!");
+
+                submitExam();
+
+            }
+
+        }, 1000);
+
+
+        function submitExam() {
+
+            examSubmitted = true;
+
+            const form = document.getElementById("exam-form");
+
+            const formData = new FormData(form);
+
+            fetch("/submit_exam", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+
+                if (data.success) {
+
+                    window.location.href =
+                        "{{ url_for('exam_result') }}";
+
+                } else {
+
+                    alert("Unable to submit exam.");
+
+                }
+
+            })
+            .catch(error => {
+
+                console.error("Submission error:", error);
+
+                alert("An error occurred while submitting the exam.");
+
+            });
+        }
+
+    </script>
+
+
+
+    <script>
+
+        function updateMonitoringStatus() {
+
+            fetch("/monitoring_status")
+
+                .then(response => response.json())
+
+                .then(data => {
+
+                    const statusElement =
+                        document.getElementById("monitoring-status");
+
+                    const scoreElement =
+                        document.getElementById("integrity-score");
+
+
+                    // Update integrity score
+                    scoreElement.textContent =
+                        data.integrity_score + "%";
+
+
+                    // Update monitoring status
+                    if (data.status === "Student Present") {
+
+                        statusElement.textContent =
+                            "🟢 Student Present";
+
+                        statusElement.style.color = "green";
+
+                    }
+
+                    else if (data.status === "No Face Detected") {
+
+                        statusElement.textContent =
+                            "🔴 Face Absent";
+
+                        statusElement.style.color = "red";
+
+                    }
+
+                    else if (data.status === "Multiple Faces Detected") {
+
+                        statusElement.textContent =
+                            "🟠 Multiple Faces Detected";
+
+                        statusElement.style.color = "orange";
+
+                    }
+
+                    else {
+
+                        statusElement.textContent =
+                            "🟡 " + data.status;
+
+                        statusElement.style.color = "orange";
+                    }
+
+                })
+
+                .catch(error => {
+
+                    console.error(
+                        "Monitoring status error:",
+                        error
+                    );
+
+                });
+        }
+
+
+        // Check every 500 milliseconds
+        setInterval(
+            updateMonitoringStatus,
+            500
+        );
+
+
+        // Run immediately
+        updateMonitoringStatus();
+
+    </script>
+
+
+
+
+    <script>
+
+    // -----------------------------------
+    // TAB SWITCH DETECTION
+    // -----------------------------------
+
+        //document.addEventListener("visibilitychange", function () {
+
+            //if (document.hidden) {
+
+                //fetch("/log_browser_event", {
+                    //method: "POST",
+                    //headers: {
+                        //"Content-Type": "application/x-www-form-urlencoded"
+                    //},
+                    //body: "event=Tab%20Switched"
+                //});
+
+            //}
+
+        //});
+
+        // -----------------------------------
+// Screenshot evidence
+// -----------------------------------
+
+let latestScreenshot = null;
+
+
+// Capture a screenshot while the exam page
+// is still visible and active
+
+async function captureEvidence() {
+
+    try {
+
+       const canvas = await html2canvas(
+            document.body,
+            {
+                scale: 0.5
+            }
+        );
+
+        latestScreenshot =
+            canvas.toDataURL(
+                "image/jpeg",
+                0.5
+            );
+
+        console.log(
+            "Evidence screenshot captured.  Size:",
+            latestScreenshot.length
+
+        );
+
+    } catch (error) {
+
+        console.error(
+            "Screenshot capture failed:",
+            error
+        );
+
+    }
+}
+
+
+
+
+// -----------------------------------
+// Tab switch detection
+// -----------------------------------
+
+document.addEventListener(
+    "visibilitychange",
+    function () {
+
+        if (document.hidden) {
+
+            console.log(
+                "Tab switch detected"
+            );
+
+
+            const formData =
+                new URLSearchParams();
+
+            formData.append(
+                "event",
+                "Tab Switched"
+            );
+
+
+            // Send the most recently captured
+            // screenshot
+
+            if (latestScreenshot) {
+
+                formData.append(
+                    "screenshot",
+                    latestScreenshot
+                );
+
+                console.log(
+                    "Sending screenshot evidence"
+                );
+
+            } else {
+
+                console.log(
+                    "No screenshot available"
+                );
+
+            }
+
+
+            // sendBeacon is more reliable than
+            // fetch when the page becomes hidden
+
+            navigator.sendBeacon(
+                "/log_browser_event",
+                formData
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+
+   
+
+</script>
+
+
+</body>
+
+</html>

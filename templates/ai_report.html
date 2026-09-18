@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ExamGuard - AI Integrity Report</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg,
+                #e3f2fd,
+                #b3e5fc
+            );
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .report-box {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0878c9;
+        }
+
+        .report {
+            white-space: pre-wrap;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .back-button {
+            display: block;
+            width: 220px;
+            margin: 25px auto;
+            padding: 12px;
+            text-align: center;
+            background: #0878c9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-button:hover {
+            background: #0565a8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="report-box">
+
+        <h1>🛡 ExamGuard AI Integrity Report</h1>
+
+        <div class="report">
+{{ report }}
+        </div>
+
+        <a
+            href="{{ url_for('invigilator') }}"
+            class="back-button"
+        >
+            Back to Invigilator Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

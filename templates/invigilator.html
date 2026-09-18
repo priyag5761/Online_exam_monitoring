@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}"
+>
+
+    <title>ExamGuard - Invigilator Analytics</title>
+
+    <style>
+
+       body {
+        margin: 0;
+        min-height: 100vh;
+        display: block;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+            135deg,
+            #e3f2fd,
+            #b3e5fc
+        );
+    }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0878c9;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .number {
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .low {
+            color: #2e9d55;
+        }
+
+        .medium {
+            color: #e6a700;
+        }
+
+        .high {
+            color: #d93025;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #0878c9;
+            text-align: center;
+        }
+
+        .graph {
+            width: 100%;
+            max-width: 1000px;
+            display: block;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background: #0878c9;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .risk-high {
+            color: #d93025;
+            font-weight: bold;
+        }
+
+        .risk-medium {
+            color: #e6a700;
+            font-weight: bold;
+        }
+
+        .risk-low {
+            color: #2e9d55;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: block;
+            width: 250px;
+            margin: 25px auto;
+            padding: 12px;
+            text-align: center;
+            background: #0878c9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-button:hover {
+            background: #0565a8;
+        }
+
+
+
+        .ai-button {
+        display: inline-block;
+        padding: 8px 12px;
+        background: #0878c9;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 13px;
+        }
+
+    .ai-button:hover {
+        background: #0565a8;
+    }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>🛡 ExamGuard Invigilator Analytics</h1>
+
+
+    <!-- Risk Summary -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2 class="low">
+                Low Risk
+            </h2>
+
+            <div class="number low">
+                {{ low_risk }}
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2 class="medium">
+                Medium Risk
+            </h2>
+
+            <div class="number medium">
+                {{ medium_risk }}
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2 class="high">
+                High Risk
+            </h2>
+
+            <div class="number high">
+                {{ high_risk }}
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- K-Means Visualization -->
+
+    <div class="section">
+
+        <h2>
+            Student Behavioral Clusters
+        </h2>
+
+        <img
+            src="{{ url_for('static', filename='kmeans_clusters.png') }}"
+            class="graph"
+        >
+
+    </div>
+
+
+    <!-- Student Risk Table -->
+
+    <div class="section">
+
+        <h2>
+            Student Risk Analysis
+        </h2>
+
+        <table>
+
+        
+
+
+            <tr>
+
+                <th>Student</th>
+
+                <th>Exam Score</th>
+
+                <th>Face Absent</th>
+
+                <th>Multiple Faces</th>
+
+                <th>Tab Switches</th>
+
+                <th>Suspicious Events</th>
+
+                <th>Integrity Score</th>
+
+                <th>Risk Level</th>
+
+                <th>AI Report</th>
+
+            </tr>
+
+
+            {% for student in students %}
+
+            <tr>
+
+                <td>
+                    {{ student["Username"] }}
+                </td>
+
+                <td>
+                    {{ student["Exam_Score"] }}
+                </td>
+
+                <td>
+                    {{ student["Face_Absent"] }}
+                </td>
+
+                <td>
+                    {{ student["Multiple_Faces"] }}
+                </td>
+
+                <td>
+                    {{ student["Tab_Switches"] }}
+                </td>
+
+                <td>
+                    {{ student["Total_Suspicious_Events"] }}
+                </td>
+
+                <td>
+                    {{ student["Integrity_Score"] }}
+                </td>
+
+                <td>
+
+                    {% if student["Risk_Level"] == "High Risk" %}
+
+                        <span class="risk-high">
+                            High Risk
+                        </span>
+
+                    {% elif student["Risk_Level"] == "Medium Risk" %}
+
+                        <span class="risk-medium">
+                            Medium Risk
+                        </span>
+
+                    {% else %}
+
+                        <span class="risk-low">
+                            Low Risk
+                        </span>
+
+                    {% endif %}
+                    
+
+                </td>
+                <td>
+
+                    <a
+                        href="{{ url_for('ai_report', username=student['Username']) }}"
+                        class="ai-button"
+                    >
+                        Generate AI Report
+                    </a>
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+
+        </table>
+
+    </div>
+
+
+
+
+            <!-- ============================= -->
+                <!-- INCIDENT & EVIDENCE MANAGEMENT -->
+                <!-- ============================= -->
+
+                <!--<div class="section">
+
+                    <h2>Incident & Evidence Management</h2>
+
+                    <table>
+
+                        <tr>
+                            <th>Student</th>
+                            <th>Event</th>
+                            <th>Details</th>
+                            <th>Timestamp</th>
+                            <th>Severity</th>
+                            <th>Evidence</th>
+                        </tr>
+
+                        {% for incident in incidents %}
+
+                        <tr>
+
+                            <td>
+                                {{ incident["username"] }}
+                            </td>
+
+                            <td>
+                                {{ incident["event_type"] }}
+                            </td>
+
+                            <td>
+                                {{ incident["details"] }}
+                            </td>
+
+                            <td>
+                                {{ incident["timestamp"] }}
+                            </td>
+
+                            <td>
+                                {{ incident["severity"] }}
+                            </td>
+
+                            <td>
+
+                                {% if incident["screenshot_path"] %}
+
+                                    <button
+                                        class="ai-button"
+                                        onclick="openEvidence(
+                                            '{{ url_for(
+                                                'evidence',
+                                                filename=incident['screenshot_path'].replace('\\', '/').split('/')[-1]
+                                            ) }}',
+                                            '{{ incident['username'] }}',
+                                            '{{ incident['event_type'] }}',
+                                            '{{ incident['severity'] }}',
+                                            '{{ incident['timestamp'] }}'
+                                        )"
+                                    >
+                                        📷 View Evidence
+                                </button>
+
+                                {% else %}
+
+                                    No Evidence
+
+                                {% endif %}
+
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </table>
+
+                </div> -->
+
+
+            <!-- ============================= -->
+            <!-- EXAM ANALYTICS -->
+            <!-- ============================= -->
+
+            <div class="analytics-section">
+
+                <h2>Exam Analytics</h2>
+
+                <!-- Summary Cards -->
+
+                <div class="analytics-summary">
+
+                    <div class="analytics-card">
+
+                        <h3>Average Integrity Score</h3>
+
+                        <p>{{ average_integrity }}</p>
+
+                    </div>
+
+
+                    <div class="analytics-card">
+
+                        <h3>Total Suspicious Events</h3>
+
+                        <p>{{ total_suspicious_events }}</p>
+
+                    </div>
+
+
+                    <div class="analytics-card">
+
+                        <h3>Risk Distribution</h3>
+
+                        <p>
+                            {{ low_risk }} Low |
+                            {{ medium_risk }} Medium |
+                            {{ high_risk }} High
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Charts -->
+
+                <div class="chart-row">
+
+                    <div class="chart-card">
+
+                        <h3>Cohort Risk Profile</h3>
+
+                        <img
+                            src="{{ url_for('static', filename='cohort_risk_profile.png') }}"
+                            alt="Cohort Risk Profile"
+                        >
+
+                    </div>
+
+
+                    <div class="chart-card">
+
+                        <h3>Suspicious Event Frequency</h3>
+
+                        <img
+                            src="{{ url_for('static', filename='event_frequency.png') }}"
+                            alt="Suspicious Event Frequency"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart-card">
+
+                    <h3>Integrity Score Distribution</h3>
+
+                    <img
+                        src="{{ url_for('static', filename='integrity_score_distribution.png') }}"
+                        alt="Integrity Score Distribution"
+                    >
+
+                </div>
+
+
+                <div class="chart-card">
+
+                    <h3>Student Event Frequency Heatmap</h3>
+
+                    <img
+                        src="{{ url_for('static', filename='event_frequency_heatmap.png') }}"
+                        alt="Student Event Frequency Heatmap"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+    <a
+        href="{{ url_for('dashboard') }}"
+        class="back-button"
+    >
+        Back to Dashboard
+    </a>
+
+
+</div>
+
+
+
+<!-- Evidence Preview Modal -->
+
+<div id="evidenceModal" class="evidence-modal">
+
+    <div class="evidence-modal-content">
+
+        <span
+            class="evidence-close"
+            onclick="closeEvidence()"
+        >
+            &times;
+        </span>
+
+        <h2>Evidence Screenshot</h2>
+
+        <img
+            id="evidenceImage"
+            src=""
+            alt="Evidence Screenshot"
+        >
+
+        <div class="evidence-details">
+
+            <p>
+                <strong>Student:</strong>
+                <span id="evidenceStudent"></span>
+            </p>
+
+            <p>
+                <strong>Event:</strong>
+                <span id="evidenceEvent"></span>
+            </p>
+
+            <p>
+                <strong>Severity:</strong>
+                <span id="evidenceSeverity"></span>
+            </p>
+
+            <p>
+                <strong>Timestamp:</strong>
+                <span id="evidenceTimestamp"></span>
+            </p>
+
+        </div>
+
+        <button
+            class="ai-button"
+            onclick="closeEvidence()"
+        >
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+function openEvidence(
+    imageUrl,
+    student,
+    eventType,
+    severity,
+    timestamp
+) {
+
+    document.getElementById("evidenceImage").src = imageUrl;
+
+    document.getElementById("evidenceStudent").textContent = student;
+
+    document.getElementById("evidenceEvent").textContent = eventType;
+
+    document.getElementById("evidenceSeverity").textContent = severity;
+
+    document.getElementById("evidenceTimestamp").textContent = timestamp;
+
+    document.getElementById("evidenceModal").style.display = "flex";
+}
+
+
+function closeEvidence() {
+
+    document.getElementById("evidenceModal").style.display = "none";
+
+    document.getElementById("evidenceImage").src = "";
+
+}
+
+</script>
+
+</body>
+
+</html>

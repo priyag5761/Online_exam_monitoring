@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>ExamGuard - Exam Result</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef5fb;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+        .result-card {
+            background: white;
+
+            width: 500px;
+
+            padding: 40px;
+
+            border-radius: 15px;
+
+            text-align: center;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .success {
+            font-size: 55px;
+        }
+
+        h1 {
+            color: #087dcc;
+        }
+
+        .score-label {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .score {
+            font-size: 45px;
+            font-weight: bold;
+            color: #087dcc;
+            margin: 10px;
+        }
+
+        .button {
+            display: block;
+
+            padding: 13px;
+
+            background: #087dcc;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 7px;
+
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background: #066bab;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="result-card">
+
+        <div class="success">
+            ✅
+        </div>
+
+        <h1>
+            Exam Submitted Successfully
+        </h1>
+
+        <p>
+            Thank you, {{ username }}.
+        </p>
+
+        <p>
+            Your examination has been submitted successfully.
+        </p>
+
+
+       <!-- <div class="score-label">
+            Final Integrity Score
+        </div>
+
+        <div class="score">
+            {{ integrity_score }}%
+        </div> !-->
+
+
+        <a
+            href="{{ url_for('dashboard') }}"
+            class="button">
+
+            Go to Dashboard
+
+        </a>
+
+
+        <a
+            href="{{ url_for('logout') }}"
+            class="button">
+
+            Logout
+
+        </a>
+
+    </div>
+
+</body>
+
+</html>
