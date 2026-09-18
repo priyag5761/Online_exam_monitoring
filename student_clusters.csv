@@ -1,0 +1,12 @@
+Username,Face_Absent,Multiple_Faces,Tab_Switches,Total_Suspicious_Events,Face_Presence_Ratio,Integrity_Score,Cluster,Risk_Level
+Ram,0,0,1,1,Not Available,85.0,1,Low Risk
+Priya,0,0,2,2,Not Available,70.0,2,Medium Risk
+Riya,0,0,1,1,Not Available,85.0,1,Low Risk
+Kishan,0,0,1,1,Not Available,85.0,1,Low Risk
+Gina,0,0,3,3,Not Available,55.0,2,High Risk
+Raju,0,0,1,1,1.0,95.5,1,Low Risk
+Hira,0,0,1,1,0.9133,89.43,1,Low Risk
+Tina,0,0,2,2,0.8853,82.97,2,Low Risk
+Gia,0,0,2,2,0.9309,86.16,2,Low Risk
+Nita,1,0,1,2,0.1667,34.17,0,High Risk
+Priyanka,0,0,2,2,0.6038,63.27,2,Medium Risk

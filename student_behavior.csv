@@ -1,0 +1,12 @@
+Username,Face_Absent,Multiple_Faces,Tab_Switches,Total_Suspicious_Events,Face_Presence_Ratio,Integrity_Score
+Ram,0,0,1,1,Not Available,85.0
+Priya,0,0,2,2,Not Available,70.0
+Riya,0,0,1,1,Not Available,85.0
+Kishan,0,0,1,1,Not Available,85.0
+Gina,0,0,3,3,Not Available,55.0
+Raju,0,0,1,1,1.0,95.5
+Hira,0,0,1,1,0.9133,89.43
+Tina,0,0,2,2,0.8853,82.97
+Gia,0,0,2,2,0.9309,86.16
+Nita,1,0,1,2,0.1667,34.17
+Priyanka,0,0,2,2,0.6038,63.27
